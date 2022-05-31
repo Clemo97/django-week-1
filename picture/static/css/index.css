@@ -58,3 +58,32 @@ img {
     margin: 10%;
     margin-top: 4% !important;
 }
+.modal-full .modal-content {
+    min-height: 30vh;
+}
+
+.img-fluid {
+    width: 450px !important;
+    height: 400px !important;
+}
+
+.modal-footer input {
+    padding: 0;
+    margin: 0;
+    width: 40% !important;
+}
+
+.modal-footer {
+    padding: 0;
+    margin: 0;
+    margin-left: 30% !important;
+}
+
+label {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: 2px solid rgba(103, 165, 9, 0.8);
+}
