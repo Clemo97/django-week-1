@@ -1,5 +1,6 @@
 from django.test import TestCase
-from .models import Picture,Category,Location
+from .models import Picture,Category,Location 
+
 # Create your tests here.
 
 class LocationTestClass(TestCase):
@@ -110,4 +111,3 @@ class PictureTestClass(TestCase):
         self.new_picture.save_image()
         searched_image=self.new_picture.search_by_category(search_term='food')
         self.assertTrue(len(searched_image)==1)
-
