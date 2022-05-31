@@ -1,0 +1,23 @@
+<nav class="mb-1 navbar navbar-expand-lg navbar-light nav-info-light ">
+    <a class="navbar-brand" href="{% url 'welcome' %}"><strong>GalleryZilla</strong> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+            <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search food,fashion or nature" name="picture">
+                    <div class="input-group-btn">
+                        <button class="btn btn-success btn-sm" type="submit"><i class="fas fa-search"></i></button>
+
+                    </div>
+            </form>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
