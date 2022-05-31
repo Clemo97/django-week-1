@@ -1,0 +1,30 @@
+body {
+    scroll-behavior: smooth;
+    /* background-image: url(../images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+.navtabs {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 20px;
+}
+
+.navtabs a {
+    color: black;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.nav-pills>li>a.active {
+    background-color: rgba(108, 158, 32, 0.8) !important;
+    border: none;
+}
+
+a.nav-link:hover {
+    background-color: whitesmoke !important;
+}
