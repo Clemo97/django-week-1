@@ -9,3 +9,15 @@ def welcome(request):
     mozambique=Picture.filter_by_location(location='Mozambique')
     iceland=Picture.filter_by_location(location='Iceland')
     return render(request,'all-pictures/index.html',{'pictures':pictures, 'kenya':kenya,'japan':japan,'mozambique':mozambique,'iceland':iceland})
+
+def search_results(request):
+    if 'picture' in request.GET and request.GET["picture"]:
+        search_term = request.GET.get("picture")
+        searched_pictures = Picture.search_by_category(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'all-pictures/search.html',{"message":message,"pictures": searched_pictures})
+
+    else:
+        message = "You haven't searched for any term"
+        return render(request, 'all-pictures/search.html',{"message":message})
