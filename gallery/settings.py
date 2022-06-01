@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-
+SECRET_KEY = 'django-insecure-em9-=8xxj$sfph@w0^oq5dv7%5dr1!bolicj_m9b%2mrj*!vx#'
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 # development
 if config('MODE')=="dev":
 
